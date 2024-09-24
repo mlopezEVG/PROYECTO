@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Miriam López Vega">
+    <title>PaginaPrincipal</title>
+    <link rel="stylesheet" href="EstilosProyecto.css">
+</head>
+<body id="bodypp">
+    <header>
+        <div id="div_encabezado">
+            <img id="Logo" src=Imagenes\Logo1_.png alt="Logo">
+            <h2>HorizonteVerde</h2>
+            <aside>
+                <nav>
+                    <a href=PaginaInicio.htmlclass class="botonesnav"><b>Inicio</b></a><!--Enlaces a las páginas desde los botones del nav-->
+                    <a href=PaginaFormulario.html class="botonesnav"><b>Únete!</b></a><!--Enlaces a las páginas desde los botones del nav-->
+                </nav>
+            </aside>    
+        </div>
+    </header>
+    <div id="divcontenedor">
+            <fieldset id="fieldsetquienessomos"><!--Apertura de un fieldset, para meter información sobre la organización-->
+                <legend><h4>¿Quiénes somos?</h4></legend><!--"Fieldset" suele venir acompañada de legend, el cual proporciona un título para el grupo de campos-->
+                <p>En <i>Horizonte Verde</i>, estamos comprometidos a combatir el cambio climático y prevenir los desastres naturales que amenazan nuestro planeta. Nuestra misión es promover prácticas sostenibles y fomentar la conciencia ambiental a través de la educación, la investigación y la acción comunitaria. Únete a nuestra organización y ayuda a:</p>
+                <ul><!--Lista desordenada, cada li es una linea de ella-->
+                    <li>Reciclar y conseguir reducir el uso de plásticos de un solo uso.</li>
+                    <li>Salvar los océanos con proyectos de limpieza de playas.</li>
+                    <li>Promover el uso de medios de transporte sostenibles como la bicicleta, caminar o el transporte público.</li>
+                    <li>Restaurar ecosistemas participando en proyectos de plantación de árboles y restaurando arrecifes de coral y manglares</li>
+                  </ul>
+            </fieldset>
+    </div>
+    <div><!--Contenedor para el desarrollo de un caso concreto con un texto explicativo y una imagen de apoyo-->
+        <img class="imgcasos" src="Imagenes\IncendiosenEspaña.jpg">
+        <div class="descripcionimg"><!--Creación de una clase para aplicarla al segundo caso concreto, ya que, llevaran el mismo CSS-->
+            <p><h5><b>"Incendios Forestales en España"</b></h5> En agosto de 2023, España sufrió varios incendios forestales devastadores, especialmente en la región de Tenerife, en las Islas Canarias. Las causas son olas de calor y el cambio climático: Las altas temperaturas y la sequía prolongada crearon condiciones propicias para los incendios, además el calentamiento global ha incrementado la frecuencia y la intensidad de las olas de calor, aumentando el riesgo de incendios forestales.
+                Hubo pérdidas humanas, al menos 3 personas murieron y varias resultaron heridas. También hubo pérdidas en infraestructura y en miles de hectáreas de bosques, por no habalr de la crisis humanitaria que dejó a a muchas personas sin hogar.
+            </p>
+        </div>
+    </div>
+    <table id="tablapagina_principal">
+        <!-- Título de la tabla -->
+        <span id="titulotabla"><h3>TABLA CON INFORMACIÓN PRECISA SOBRE DESASTRES OCASIONADOS POR EL CAMBIO CLIMÁTICO</h3><span>
+        <tbody>
+            <!-- Cabecera de la tabla -->
+            <tr id="cabeceratabla">
+                <td>Título</td> <!-- Columna para los títulos de los desastres -->
+                <td>Descripción</td> <!-- Columna para las descripciones de los desastres -->
+                <td>Fecha</td> <!-- Columna para las fechas de los desastres -->
+                <td>Fuente</td> <!-- Columna para las fuentes de información -->
+            </tr>
+            <!-- Primera fila de datos -->
+            <tr>
+                <td>Cambio climático produjo megatsunami y dejó a la Tierra temblando por 9 días</td> <!-- Título del primer desastre -->
+                <td>Un megatsunami causado por el cambio climático dejó a la Tierra temblando por 9 días.</td> <!-- Descripción del primer desastre -->
+                <td>17 de septiembre de 2024</td> <!-- Fecha del primer desastre -->
+                <td><a href="https://www.elmostrador.cl/juego-limpio/2024/09/17/cambio-climatico-produjo-megatsunami-y-dejo-a-la-tierra-temblando-por-9-dias/">El Mostrador</a></td> <!-- Fuente del primer desastre -->
+            </tr>
+            <!-- Segunda fila de datos -->
+            <tr>
+                <td>Sequías, tormentas e inundaciones: el agua y el cambio climático</td> <!-- Título del segundo desastre -->
+                <td>La mitad de los daños humanos y económicos causados por catástrofes en los últimos 50 años están relacionados con el agua y el clima.</td> <!-- Descripción del segundo desastre -->
+                <td>22 de julio de 2021</td> <!-- Fecha del segundo desastre -->
+                <td><a href="https://news.un.org/es/story/2021/07/1494632">Noticias ONU</a></td> <!-- Fuente del segundo desastre -->
+            </tr>
+            <!-- Tercera fila de datos -->
+            <tr>
+                <td>Las catástrofes relacionadas con el clima se quintuplican en 50 años</td> <!-- Título del tercer desastre -->
+                <td>Las catástrofes relacionadas con el clima se han quintuplicado en los últimos 50 años, pero la mejora de los sistemas de alerta ha salvado más vidas.</td> <!-- Descripción del tercer desastre -->
+                <td>1 de septiembre de 2021</td> <!-- Fecha del tercer desastre -->
+                <td><a href="https://news.un.org/es/story/2021/09/1496142">Noticias ONU</a></td> <!-- Fuente del tercer desastre -->
+            </tr>
+            <!-- Cuarta fila de datos -->
+            <tr>
+                <td>Las huellas del cambio climático en Europa</td> <!-- Título del cuarto desastre -->
+                <td>Inundaciones, sequías, incendios y récord de temperaturas en Europa en 2021.</td> <!-- Descripción del cuarto desastre -->
+                <td>22 de abril de 2022</td> <!-- Fecha del cuarto desastre -->
+                <td><a href="https://elpais.com/clima-y-medio-ambiente/2022-04-22/las-huellas-del-cambio-climatico-en-europa-inundaciones-sequias-incendios-y-temperaturas-record.html">El País</a></td> <!-- Fuente del cuarto desastre -->
+            </tr>
+            <!-- Quinta fila de datos -->
+            <tr>
+                <td>Europa, la viva imagen de un mundo que se calienta por el cambio climático</td> <!-- Título del quinto desastre -->
+                <td>Fenómenos meteorológicos y climáticos extremos provocaron cientos de víctimas mortales y daños económicos en 2021.</td> <!-- Descripción del quinto desastre -->
+                <td>2 de noviembre de 2022</td> <!-- Fecha del quinto desastre -->
+                <td><a href="https://news.un.org/es/story/2022/11/1516557">Noticias ONU</a></td> <!-- Fuente del quinto desastre -->
+            </tr>
+            <!-- Sexta fila de datos -->
+            <tr>
+                <td>Las extremas olas de calor, las inundaciones y las sequías empeorarán</td> <!-- Título del sexto desastre -->
+                <td>El IPCC advierte que el clima extremo será más común sin una reducción drástica de emisiones.</td> <!-- Descripción del sexto desastre -->
+                <td>Agosto de 2021</td> <!-- Fecha del sexto desastre -->
+                <td><a href="https://www.nationalgeographicla.com/medio-ambiente/2021/08/las-olas-de-calor-inundaciones-y-sequias-empeoraran-si-no-se-reduce-el-calentamiento">National Geographic</a></td> <!-- Fuente del sexto desastre -->
+            </tr>
+        </tbody>
+    </table>
+      <div><!--Contenedor para el desarrollo de un caso concreto con un texto explicativo y una imagen de apoyo-->
+        <img class="imgcasos" src="Imagenes\inundaciones-europa.jpg">
+        <div class="descripcionimg">
+            <p><h5><b>"Una de las inundaciones más graves ocurrió en Europa"</b></h5> Una de las inundaciones más devastadoras relacionadas con el cambio climático ocurrió en Europa en julio de 2021. Las lluvias extremas provocaron inundaciones que arrasaron casas centenarias, causaron corrimientos de tierras y afectaron gravemente a varias regiones, incluyendo Alemania y Bélgica. La región experimentó lluvias intensas en un corto periodo de tiempo, lo que saturó el suelo y los sistemas de drenaje. Las inundaciones fueron rápidas ya que el agua se acumuló rápidamente desbordando ríos y arroyos. Lo peor de todo fue la cantidad de personas que perdieron la vida, ni msa ni menos que 900 personas y miles quedaron sin hogar. Las perdidas económicas fueron significativas debido a los daños en infraestructuras y propiedades.
+            </p>
+        </div>
+    </div>
+      <footer>
+        <!-- Contenedor principal del pie de página -->
+        <div id="divfooter">
+            <!-- Contenedor del título del pie de página -->
+            <div id="h3titulofooterpp">
+                <!-- Contenedor principal del pie de página -->
+                <h3><u><a href=PaginaFormulario.html>¡Únete a nosotros!</a>, JUNTOS podemos</u></h3>
+            </div>
+            <!-- Contenedor de las redes sociales -->
+            <div id="redessociales">
+                <section>
+                    <!-- Subtítulo para invitar a seguir en redes sociales -->
+                    <h5>Síguenos en nuestras redes sociales</h5>
+                    <div class="social-media"><!-- Contenedor para Twitter -->
+                        <img src="Imagenes\twitter.png" alt="Twitter"><!-- Imagen del icono de Twitter -->
+                        <span>@HorizonteVerde_</span><!-- Nombre de usuario de Twitter -->
+                    </div>
+                    <div class="social-media"><!-- Contenedor para Instagram -->
+                        <img src=Imagenes\Instagram.png><!-- Imagen del icono de Instagram -->
+                        <span>@HorizonteVerde</span><!-- Nombre de usuario de Instagram -->
+                    </div>
+                    <div class="social-media"><!-- Contenedor para Facebook -->
+                        <img src=Imagenes\facebook.png><!-- Imagen del icono de Facebook -->
+                        <span>@Horizonte.Verde</span><!-- Nombre de usuario de Facebook -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

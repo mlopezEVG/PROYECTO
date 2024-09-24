@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="author" content="Miriam López Vega"><!--Autor de la página-->
+        <title>Formulario de inscripcion</title><!--Título del documento-->
+        <link rel="stylesheet" href="EstilosProyecto.css"><!--Link del archivo CSS externo-->
+    </head>
+    <body id="bodyform">
+        <!-- Encabezado con logo, título y barra de navegación -->
+        <header>
+            <div id="div_encabezado"><!--"id" asigna estilos a un elemento en concreto-->
+                <img id="Logo" src=Imagenes\Logo1_.png alt="Logo">
+                <h2>HorizonteVerde</h2>
+                <aside><!--"aside" define contenido que está indirectamente relacionado con el contenido principal de la página, como una sección complementaria-->
+                    <nav> <!-- Enlaces de navegación -->
+                        <a href=PaginaInicio.html class="botonesnav"><b>Inicio</b></a><!--Enlaces a las páginas desde los botones del nav-->
+                        <a href=PaginaFormulario.html class="botonesnav"><b>Únete!</b></a>
+                    </nav>
+                </aside>    
+            </div><!--Cierre del contenedor-->
+        </header>
+        <div id="divtítuloform"><!--Div que contiene un <span> como introducción al formulario-->
+            <span><h3 id="h3tituloform">¿Te gustaría unirte a la causa?</h3></span>
+        </div>
+        <form> <!--Formulario de inscripción-->
+            <fieldset id="fieldsetDatos"><!--Apertura del primer "fieldset", esta etiqueta agrupa elementos relacionados dentro de un formulario-->
+                <legend><h4> Datos Personales </h4></legend><!--"Fieldset" suele venir acompañada de legend, el cual proporciona un título para el grupo de campos-->
+                <!--Campo para el nombre-->
+                <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                <!--Campo para los apellidos-->
+                <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required><br><br>
+                <!--Campo para la fecha de nacimiento, en este caso con un tipo "fecha". -->
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+                <!--Campo para el correo electrónico-->
+                <label for="email">Correo Electrónico:</label>
+                    <input type="text" id="email" name="email" required><br><br>
+                <!--Campo para el teléfono-->
+                <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required><br><br>
+            </fieldset>
+            <!-- Imagen para apoyar al formulario gráficamente -->
+            <img id="imgform" src="C:\Users\miiri\Desktop\2DAW\DIW\Proyecto_DesastresNaturales\Imagenes\Elmundosehereda.jpg">
+            <fieldset id="fieldsetOtros"><!--Apertura del segundo "fieldset"-->
+                <legend><h4>Otros</h4></legend><!--"Fieldset" suele venir acompañada de legend, el cual proporciona un título para el grupo de campos-->
+                <!-- Opciones de actividades -->
+                <p><b>¿En qué actividades te gustaría participar?</b></p><!--Título que agrupa al conjunto de actividades de tipo checkbox.-->
+                    <input type="checkbox" id="restauracion_ecosistemas" name="actividades" value="reforestacion">
+                        <label for="restauracion_ecosistemas">Restauración de Ecosistemas</label><br>
+                    <input type="checkbox" id="limpieza" name="actividades" value="limpieza">
+                        <label for="limpieza">Limpieza de Áreas Urbanas</label><br>
+                    <input type="checkbox" id="reciclaje" name="actividades" value="reciclaje">
+                        <label for="reciclaje">Reciclaje y Gestión de Residuos</label><br>
+                <!--Sección de disponibilidad, para hacer uso de los menús desplegables.-->
+                <p><b><label for="disponibilidad">Disponibilidad:</b></label>
+                    <!--Creamos un desplegable con select y con option para indicar las diferentes opciones-->
+                    <select id="disponibilidad" name="disponibilidad">
+                        <option value="manana">Mañanas</option>
+                        <option value="tarde">Tardes</option>
+                        <option value="fin_de_semana">Fines de semana</option>
+                    </select><br>
+                <!--Sección de preferencias de contacto, para hacer uso de el tipo radio.-->
+                <p><b>Preferencias de contacto:</b></p>
+                  <input type="radio" id="email" name="comunicacion" value="email">
+                    <label for="email">Correo electrónico</label><br>
+                  <input type="radio" id="telefono" name="comunicacion" value="telefono">
+                    <label for="telefono">Llamadas telefónicas</label><br>
+            
+                <!-- Botón para enviar el formulario, class asigna clasesa los elementos que permiten aplicar estilos CSS-->
+                <input id="buttonEnviar" type="submit" value="Enviar">
+            </fieldset> <!--Cierre del segundo fieldset -->
+        </form><!--Cierre del formulario del documento-->
+        <footer>
+            <div id="divfooter"><!-- Contenedor principal del pie de página -->
+                <div id="h3titulofooter">
+                <!-- Contenedor principal del pie de página -->
+                    <h3><u>¡Gracias por unirte a nosotros! y recuerda, el planeta se hereda</u></h3>
+                </div>
+                <!-- Contenedor de las redes sociales -->
+                <div id="redessociales">
+                    <section>
+                        <!-- Subtítulo para invitar a seguir en redes sociales -->
+                        <h5>Síguenos en nuestras redes sociales</h5>
+                        <div class="social-media"><!-- Contenedor para Twitter -->
+                            <img src="Imagenes\twitter.png" alt="Twitter">
+                            <span>@HorizonteVerde_</span>
+                        </div>
+                        <div class="social-media"><!-- Contenedor para Instagram -->
+                            <img src=Imagenes\Instagram.png><!-- Imagen del icono de Instagram -->
+                            <span>@HorizonteVerde</span><!-- Nombre de usuario de Instagram -->
+                        </div>
+                        <div class="social-media"><!-- Contenedor para Facebook -->
+                            <img src=Imagenes\facebook.png><!-- Imagen del icono de Facebook -->
+                            <span>@Horizonte.Verde</span><!-- Nombre de usuario de Facebook -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </body><!--Cierre del cuerpo del documento-->
+</html>

@@ -1,0 +1,235 @@
+/*Autor: Miriam López Vega*/
+/*Estilos de la pagina principal y el formulario*/
+/*Estilos de la pagina principal:*/
+#bodypp{/*Body específico para la página principal*/
+    max-width: 1280px;/*Resolución de la página*/
+    margin:0 auto;/*Coloca centrada la página*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;/*Fuente del body de la página*/
+    background-image:url('Imagenes/background.jpg');/*Imagen de fondo*/
+}
+#divcontenedor{
+    margin-left:50px;
+    flex-direction: column;
+    justify-content: center; /* Alinea verticalmente */
+    align-items: center; /* Alinea horizontalmente */
+}
+ul{ /*Estilo para la lista desordenada*/
+    list-style-type: square;/*Cambia de forma los puntos predeterminados de las listas desordenadas, ene ste caso les pone cuadrados*/
+}
+ul li {/*Estilo para la lista desordenada, añade estilo a las lineas de la lista,le añade color de fondo*/
+    background-color: #ceba90; /* Color de fondo */
+}
+#imgdesbordamiento{
+    width: 30%;
+    height: auto;
+    display:inline-block;/* Hace que se comporte como un elemento en línea */
+}
+.descripcionimg{/*Creación de una clase para aplicarla al segundo caso concreto, ya que, llevaran el mismo CSS*/
+    border:5px solid white;/* Establece un borde negro de 3px alrededor del fieldset */
+    width: 800px;/* Establece el ancho del fieldset */
+    height: 240px;/* Establece la altura del fieldset */
+    background-color:  rgb(232, 212, 189);
+    display:inline-block;/* Hace que el fieldset se comporte como un elemento en línea */
+    margin-left: 222px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left:30px;
+    padding-right:20px;
+}
+#fieldsetquienessomos{ /*He creado un fieldset para poner los datos de la organizacion*/
+    border:5px solid white;/* Establece un borde negro de 3px alrededor del fieldset */
+    width: 800px;/* Establece el ancho del fieldset */
+    height: 250px;/* Establece la altura del fieldset */
+    background-color:  rgb(232, 212, 189);
+    display:inline-block;/* Hace que el fieldset se comporte como un elemento en línea */
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+.imgcasos{
+    border: 3px solid white;
+    margin-left: 300px;
+    width: 50%;
+    height: auto;
+    display:inline-block;/* Hace que se comporte como un elemento en línea */
+}
+#titulotabla{/*Estilo para el titulo de la tabla*/
+    background-color:  rgb(218, 195, 165);/* Establece el color de fondo del div */
+    border:3px solid rgb(255, 255, 255);
+    margin-top: 35px;
+    margin-left: 90px;
+    height: 55px;
+    display:inline-block;/* Hace que el div se comporte como un elemento en línea */
+}
+#tablapagina_principal{/*Estilo para la tabla*/
+    border:3px solid rgb(255, 255, 255);
+    background-color: rgb(220, 203, 181);
+    border-collapse: collapse;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+td{/*Estilo para las celdas de la tabla*/
+    border:3px solid rgb(104, 81, 52);
+    padding:15px;
+    font-size: 16px;
+}
+#cabeceratabla{/*Estilo para las celdas de la tabla*/
+    font-weight: bold;
+    text-align: center;
+    background-color:rgb(118, 101, 78);
+    color: white;
+}
+#h3titulofooterpp{/*Estilo para el titulo del footer de la pagina principal*/
+    color:  rgb(123, 87, 41);
+    margin-left: 32.5%;
+    margin-right: 32.5%;
+}
+/*Estilos del formulario:*/
+#bodyform{
+    max-width: 1280px;/*Resolución de la página*/
+    margin:0 auto;/*Coloca centrada la página*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(184, 153, 114);
+}
+header{
+    background-color: rgb(180, 233, 180);/* Establece el color de fondo del encabezado */
+    margin-left: 20px;/* Añade un margen a la izquierda del encabezado */
+    margin-top: 10px;/* Añade un margen en la parte superior del encabezado */
+    padding-top:5px;/* Añade un relleno en la parte superior del encabezado */
+    padding-bottom:5px;/* Añade un relleno en la parte inferior del encabezado */
+}
+#div_encabezado{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(73, 160, 73);/* Establece un borde de 3px de color verde alrededor del div */
+    background-color: rgb(255, 255, 255);/* Establece el color de fondo del div */
+    height:8vh;/* Establece la altura del div en 8% de la altura de la ventana gráfica */
+    line-height: 8vh;/* Establece la altura de línea para centrar verticalmente el contenido */
+}
+ #div_encabezado img ,#div_encabezado h2, #div_encabezado nav{ /*Aplica estilos a los elementos del div_encabezado*/
+    display:inline-block;/* Hace que los elementos se alineen en línea , sustituto de display. flex;*/
+}
+#Logo{/*Aplica estilos a la imagen del logo de la página*/
+    max-width: 3.8%;/* Establece el ancho máximo de la imagen del logo */
+    height:auto;/* Ajusta la altura automáticamente para mantener la proporción */
+    margin-bottom: 0px;
+}
+h2{/*Aplica estilos al nombre de la página web en tamaño h2*/
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-top:0px;
+}
+aside{
+    float:right;/* Hace que el aside flote a la derecha */
+    margin-right:40px;/* Añade un margen a la derecha del aside */
+}
+.botonesnav{/*Establece el estilo del botón de la barra de navegación */
+    background-color:rgb(171, 231, 171);/* Establece el color de fondo del botón */
+    cursor:pointer;/* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    margin-right:10px;/*A diferencia del botón de Únete a este le añado un margen a la derecha para separarlo del otro botón*/
+    border:2px solid black;/* Establece un borde negro de 2px alrededor del botón */
+    padding:2px;/* Añade un relleno de 2px dentro del botón */
+    text-decoration: none;
+}
+/* Pseudoclase para poner estilos a los enlaces*/
+.botonesnav :active {
+    color: white; /* Color del texto del enlace no visitado */
+}
+#divtítuloform{
+    background-color:  rgb(218, 195, 165);/* Establece el color de fondo del div */
+    margin-top: 7px;
+    margin-bottom: 1px;
+    margin-left: 30px;
+    display:inline-block;/* Hace que el div se comporte como un elemento en línea */
+}
+#h3tituloform{
+    margin-top: 0px;/* Elimina el margen superior del h3 */
+    margin-bottom: 0px;/* Elimina el margen inferior del h3 */
+    padding-top: 10px;      
+    padding-bottom: 10px;/*Añade padding a todos los lados del <span> utilizado como introducción al formulario*/
+    padding-left: 5px;
+    padding-right: 5px;
+}
+h4{/*Añade estilos al legend  del formulario*/
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 5px;/* Añade un margen en la parte superior del h4 */
+    margin-bottom: 0px;
+    background-color:  rgb(65, 51, 32);
+    color:rgb(245, 233, 216);
+    border:2px solid white;
+}
+form{
+    display:inline-block;/* Hace que el formulario se comporte como un elemento en línea */
+}
+#fieldsetDatos{/*Establece el estilo de la primera agrupación del formulario*/
+    border:3px solid white;/* Establece un borde negro de 3px alrededor del fieldset */
+    width: 700px;/* Establece el ancho del fieldset */
+    height: 220px;/* Establece la altura del fieldset */
+    background-color:  rgb(232, 212, 189);
+    margin-left:30px;
+    margin-right:50px;
+    display:inline-block;/* Hace que el fieldset se comporte como un elemento en línea */
+}
+
+#imgform{
+  width:35%;/* Establece el ancho de la imagen dentro del formulario */
+  height:auto;/* Ajusta la altura automáticamente para mantener la proporción */
+  margin-left: 10px;
+  margin-top: 92px;
+  float: right;/* Hace que la imagen flote/alinee a la derecha*/
+  border:2px solid white;
+}
+#fieldsetOtros{/*Establece el estilo de la segunda agrupación del formulario*/
+    border:3px solid white;/* Establece un borde negro de 3px alrededor del fieldset */
+    width: 700px;
+    height: 325px;
+    background-color:  rgb(232, 212, 189);
+    margin-left:30px;
+    margin-right:50px;
+    display:inline-block;
+}
+#buttonEnviar{/*Establece el estilo del botón de enviar del formulario*/
+    background-color:rgb(171, 231, 171);/* Hace que la imagen flote a la derecha */
+    cursor:pointer;
+    width: 70px;
+    height: 30px;/* Establece la altura del botón */
+    margin-left: 300px;
+    margin-top: 25px;
+    font-weight: bold; /* Establece el texto del botón en negrita */
+    border:2px solid black;/* Establece un borde negro de 2px alrededor del botón */
+}
+#h3titulofooter{   /*Titulo del apartado footer*/
+    color:  rgb(123, 87, 41);
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+}
+#divfooter{
+    border:3px solid white;
+    background-color:  antiquewhite;
+    height:260px;
+    width:95%;
+    margin-left:30px;
+    margin-top:25px;
+}
+#redessociales{ /*Contenedor de las redes sociales*/
+    display:inline-block;
+    background-color: rgb(205, 181, 150);
+    border:4px solid white; 
+    margin-left: 60px;
+    margin-top: 20px;
+    padding:10px;
+}
+.social-media {/*Estilo para los div de la sección de redes sociales*/
+    display: inline-block;
+    align-items: center;
+    gap: 10px; /*Aplica una diferencia de 10 px entre elemenetos*/
+}
+.social-media img {/*Estilo para las imágenes de la sección de redes sociales*/
+    width: 24px;
+    height: 24px;
+}
